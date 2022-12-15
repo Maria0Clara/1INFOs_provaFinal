@@ -10,9 +10,22 @@
     */
 
     //ENTRADA
-
+const computador = Number(prompt("Qual o valor do computador?"));
+const pagamento= Number(prompt("Qual a forma de pagamento?"));
     //PROCESSAMENTO
+    let resposta ;
+switch(pagamento){
+    case "B":
+            resposta = computador + (pagamento * 3 / 100);
+            break;
+        case "D":
+            resposta = computador + (pagamento* 5 / 100);
+            break;
+        case "P":
+            resposta = computador + (pagamento* 10/ 100);
+            break;
+    }
 
     //SAÍDA
-
+    document.write(`O valor pago será de ${resposta}`);
 </script>
